@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-<<<<<<< HEAD
-
 html, body {
     overflow: hidden !important; 
     height: 100vh;
@@ -19,8 +17,6 @@ html, body {
 .scrollbar-hidden::-webkit-scrollbar {
     display: none;
 }
-
-
 
 @layer base {
   :root {
@@ -78,31 +74,11 @@ html, body {
     }
 }
 
-
-
 @layer base {
   * {
     @apply border-border outline-ring/50;
-    }
+  }
   body {
     @apply bg-background text-foreground;
-    }
-=======
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
   }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
->>>>>>> bbb5916 (Initial commit)
 }
