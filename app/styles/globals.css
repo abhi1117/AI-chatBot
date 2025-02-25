@@ -1,0 +1,52 @@
+/* Fully hides scrollbar */
+/* Hide scrollbar for Webkit (Chrome, Safari) */
+.scrollbar-hidden::-webkit-scrollbar {
+    width: 0px;
+    display: none;
+}
+
+/* Hide scrollbar for Firefox */
+.scrollbar-hidden {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+
+/* Remove scrollbars from the entire webpage */
+html, body {
+    overflow: hidden !important; /* Prevents scrolling on the whole page */
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Hide scrollbar in the chat window */
+.scrollbar-hidden {
+    overflow-y: auto; /* Allows scrolling without showing scrollbar */
+    -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari, and other WebKit browsers */
+.scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+}
+
+
+html, body {
+    overflow: hidden !important; 
+    height: 100vh;
+    width: 100vw;
+    background: #f3f4f6;
+}
+
+/* ✅ Hide scrollbar */
+.scrollbar-hidden {
+    overflow-y: auto;
+    -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+}
+
