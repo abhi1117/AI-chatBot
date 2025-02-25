@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+<<<<<<< HEAD
 import tailwindcssAnimate from "tailwindcss-animate";
 
 // ...
@@ -7,11 +8,17 @@ import tailwindcssAnimate from "tailwindcss-animate";
 export default {
     darkMode: ["class"],
     content: [
+=======
+
+export default {
+  content: [
+>>>>>>> bbb5916 (Initial commit)
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+<<<<<<< HEAD
   	extend: {
   		colors: {
   			background: 'hsl(var(--background))',
@@ -64,4 +71,14 @@ export default {
   },
 
 plugins: [tailwindcssAnimate],
+=======
+    extend: {
+      colors: {
+        background: "var(--background)",
+        foreground: "var(--foreground)",
+      },
+    },
+  },
+  plugins: [],
+>>>>>>> bbb5916 (Initial commit)
 } satisfies Config;
