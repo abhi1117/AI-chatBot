@@ -2,13 +2,16 @@ import { useEffect, useRef } from "react";
 import { motion } from "framer-motion"; // ✅ Add animations
 
 export default function ChatWindow({ messages }: { messages: { userMessage: string; botReply: string }[] }) {
-    const chatRef = useRef(null);
+    const chatRef = useRef<HTMLDivElement | null>(null);
 
     useEffect(() => {
         if (chatRef.current) {
-            // You can use chatRef.current here if needed
+            chatRef.current.scrollTo({
+                top: chatRef.current.scrollHeight,
+                behavior: "smooth", // ✅ Smooth scrolling effect
+            });
         }
-    }, [messages]);
+    }, [messages]); // ✅ Runs when messages update
 
     return (
         <div
@@ -25,8 +28,8 @@ export default function ChatWindow({ messages }: { messages: { userMessage: stri
                 >
                     <div
                         className={`px-4 py-2 max-w-xs text-white rounded-xl shadow-md transition-all ${msg.userMessage
-                            ? "bg-blue-500  text-white rounded-tr-none"
-                                : "bg-gray-500 text-black rounded-tl-none"
+                            ? "bg-blue-500 text-white rounded-tr-none"
+                            : "bg-gray-500 text-black rounded-tl-none"
                             }`}
                     >
                         {msg.userMessage || msg.botReply}
