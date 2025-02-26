@@ -22,16 +22,7 @@ export default function MessageInput({ onSend }: { onSend: (message: string) => 
             />
             <button
                 onClick={handleSend}
-               
-               
-               
                 className="ml-2 px-4 py-2 bg-gradient-to-r from-indigo-500 to-blue-500 text-white font-semibold rounded-full hover:shadow-lg hover:scale-105 transition-all flex items-center gap-2"
-
-
-
-           
-            
-            
             >
                 <Send size={18} /> Send
             </button>
