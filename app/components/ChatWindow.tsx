@@ -13,6 +13,8 @@ export default function ChatWindow({ messages }: { messages: { userMessage: stri
         }
     }, [messages]); // ✅ Runs when messages update
 
+//hello
+
     return (
         <div
             ref={chatRef}
